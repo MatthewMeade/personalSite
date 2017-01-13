@@ -2,7 +2,7 @@ body{
     background: rgb(15,15,20);
 }
 h1{
-    margin: 15% auto;
+    margin: 15% 0 0 0;
     width: 100%;
     text-align: center;
     font-size: 1200%;
@@ -10,4 +10,22 @@ h1{
     background: rgba(10,10,10,0.25);
     color: white;
     font-family: monospace;
+}
+
+#gitHubLink {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    width: 128px;
+    height: 128px;
+
+    background-color: #F54D27;
+    border-radius: 50%;
+    background-size: 10%;
+}
+#gitHubLink img{
+    width: 110%;
+    position: relative;
+    top: -5px;
+    left: -5px;
 }
