@@ -1,0 +1,13 @@
+body{
+    background: rgb(15,15,20);
+}
+h1{
+    margin: 15% auto;
+    width: 100%;
+    text-align: center;
+    font-size: 1200%;
+
+    background: rgba(10,10,10,0.25);
+    color: white;
+    font-family: monospace;
+}
