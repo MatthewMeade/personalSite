@@ -16,7 +16,7 @@ h1{
 }
 
 #gitHubDiv{
-    right: 25px;
+    right: 50px;
 
     background-color: #F54D27;
     border-radius: 50%;
@@ -28,7 +28,7 @@ h1{
 }
 
 #resumeDiv{
-    left: 25px;
+    left: 50px;
 }
 
 #resumeDiv img{
@@ -38,7 +38,7 @@ h1{
 
 .cornerDiv{
     position: absolute;
-    bottom: 25px;
+    bottom: 50px;
     width: 128px;
     height: 128px;
 
@@ -59,3 +59,4 @@ h1{
 .cornerDiv:hover img{
     filter: invert(100%);
 }
+
