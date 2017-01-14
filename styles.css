@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
 body{
     background: rgb(15,15,20);
 }
@@ -5,11 +7,12 @@ h1{
     margin: 15% 0 0 0;
     width: 100%;
     text-align: center;
-    font-size: 1200%;
+    font-size: 1000%;
 
     background: rgba(10,10,10,0.25);
     color: white;
-    font-family: monospace;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: normal;
 }
 
 #gitHubLink {
