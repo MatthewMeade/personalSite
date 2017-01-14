@@ -24,18 +24,48 @@ h1{
 
     background-color: #F54D27;
     border-radius: 50%;
+
+    transition: transform 0.5s;
 }
 #gitHubLink img{
-    width: 120px;
+    width: 95%;
     position: relative;
     top: 3px;
-    left: 4px;
+    left: 3.5px;
 
     filter: invert(0);
     transition: filter .5s;
 }
 
-#gitHubLink img:hover{
+#gitHubLink:hover{
+    transform: scale(1.2);
+
+}
+
+#gitHubLink:hover img{
     filter: invert(100%);
 }
 
+#resumeLink{
+    width: 128px;
+    height: 128px;
+
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+
+    transition: transform 0.5s;
+
+}
+
+#resumeLink img{
+    position: relative;
+    left: -11px;
+    width: 95%;
+    filter: invert(100%);
+
+}
+
+#resumeLink:hover{
+    transform: scale(1.2);
+}
