@@ -3,6 +3,8 @@
 
 body{
     background: rgb(15,15,20);
+
+    overflow: hidden;
 }
 h1{
     margin: 15% 0 0 0;
@@ -118,4 +120,71 @@ h1{
     border: 10px solid;
 }
 
+#contactTab{
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+
+    width: 250px;
+    height: 50px;
+    transform: translateX(-50%);
+
+    background: #1573D0;
+
+    user-select: none;
+    transition: bottom .3s;
+}
+
+#contactTab:before, #contactTab:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    border-top: 20px solid rgb(15,15,20);
+
+    transition: transform .3s;
+}
+
+#contactTab:before{
+    left: -1px;
+    border-right: 20px solid transparent;
+
+    transform-origin: top right;
+}
+
+#contactTab:after{
+    right: -2px;
+    border-left: 20px solid transparent;
+
+    transform-origin: top left;
+}
+
+#contactTab:hover:before{
+    transform: rotateZ(20deg);
+}
+
+#contactTab:hover:after{
+    transform: rotateZ(-20deg);
+
+}
+
+#contactTab p{
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    padding-bottom: 10px;
+    font-size: 200%;
+
+    text-align: center;
+    font-family: monospace;
+
+    color: white;
+    border-bottom: 10px solid #1573D0;
+}
+
+#contactTab:hover{
+    bottom: 0;
+    font-weight: bold;
+}
 
