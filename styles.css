@@ -110,6 +110,7 @@ h1{
     font-variant: small-caps;
 }
 
+
 .cornerDiv:hover:before{
     content: "";
     position: absolute;
