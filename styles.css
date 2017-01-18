@@ -133,6 +133,8 @@ h1{
 
     user-select: none;
     transition: bottom .3s;
+
+    z-index: 100;
 }
 
 #contactTab:before, #contactTab:after{
@@ -149,25 +151,13 @@ h1{
 #contactTab:before{
     left: -1px;
     border-right: 20px solid transparent;
-
-    transform-origin: top right;
 }
 
 #contactTab:after{
     right: -2px;
     border-left: 20px solid transparent;
-
-    transform-origin: top left;
 }
 
-#contactTab:hover:before{
-    transform: rotateZ(20deg);
-}
-
-#contactTab:hover:after{
-    transform: rotateZ(-20deg);
-
-}
 
 #contactTab p{
     position: absolute;
@@ -183,8 +173,67 @@ h1{
     border-bottom: 10px solid #1573D0;
 }
 
-#contactTab:hover{
+#contactTab:not(.active):hover{
     bottom: 0;
     font-weight: bold;
 }
+
+#contactTab.active{
+    bottom: 40%;
+}
+
+#contactContent{
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    width: 250%;
+    height: 300px;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+
+    background: #1573D0;
+
+    z-index: -10;
+}
+
+#contactBG{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2000px;
+
+    transition: background 2s;
+
+    z-index: 1;
+}
+
+#contactBG.hidden{
+    display: none;
+}
+
+#contactContent:before, #contactContent:after{
+    content: "";
+
+    position: absolute;
+    top: 5px;
+
+    width: 5px;
+    height: 290px;
+
+
+    background: rgba(255,255,255,.05);
+}
+
+#contactContent:before{
+    left: 10px;
+}
+
+#contactContent:after{
+    right: 10px;
+}
+
+
+
+
 
