@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
 
 
 body{
@@ -159,7 +161,7 @@ h1{
 }
 
 
-#contactTab p{
+#contactTab h2{
     position: absolute;
     bottom: -30px;
     width: 100%;
@@ -190,6 +192,7 @@ h1{
     height: 300px;
     box-sizing: border-box;
     transform: translateX(-50%);
+    padding: 20px;
 
     background: #1573D0;
 
@@ -221,7 +224,6 @@ h1{
     width: 5px;
     height: 290px;
 
-
     background: rgba(255,255,255,.05);
 }
 
@@ -233,6 +235,83 @@ h1{
     right: 10px;
 }
 
+#contactInfo{
+    font-size: 200%;
+    text-align: center;
+
+    font-family: 'VT323', monospace;
+    background-color: rgba(0,0,0,0.1);
+    text-transform: uppercase;
+}
+
+.contactLabel{
+    color: white;
+    margin-right: .5em;
+}
+
+#contactInfo a{
+    color: white;
+}
+
+.contactInfo a:visited{
+    color: white;
+}
+
+#contactForm{
+    width: 95%;
+
+    margin: 10px auto;
+    padding: 10px;
+
+    background-color: rgba(0,0,0,0.1);
+}
+
+#contactForm textarea{
+    width: 90%;
+    height: 125px;
+    margin: 0 auto;
+
+    font-size: 125%;
+    
+    color: white;
+
+    background: none;
+    border: none;
+    outline: none;
+    display: block;
+    resize: none;
+}
+
+#contactForm textarea::-webkit-input-placeholder{
+    color:    lightblue;
+}
+
+#contactForm textarea::-moz-placeholder{
+    color:    lightblue;
+}
+
+#contactForm textarea:-ms-input-placeholder{
+    color:    lightblue;
+}
+
+#contactForm button{
+    display: block;
+    margin: 0 auto;
+
+    font-family: 'VT323', monospace;
+    font-size: 200%;
+    text-transform: uppercase;
+    color: white;
+
+    background: none;
+    border: none;
+    outline: none;
+}
+
+#contactForm button:hover{
+    color: #EEE;
+    text-decoration: underline;
+}
 
 
 
