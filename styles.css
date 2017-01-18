@@ -266,13 +266,11 @@ h1{
     background-color: rgba(0,0,0,0.1);
 }
 
-#contactForm textarea{
-    width: 90%;
-    height: 125px;
+#contactForm textarea, #email{
     margin: 0 auto;
 
     font-size: 125%;
-    
+
     color: white;
 
     background: none;
@@ -282,15 +280,28 @@ h1{
     resize: none;
 }
 
-#contactForm textarea::-webkit-input-placeholder{
+#contactForm textarea{
+    width: 90%;
+    height: 125px;
+}
+
+#email{
+    width: 90%;
+
+    border-bottom: 5px solid rgba(255,255,255,0.5);
+    margin-bottom: 5px;
+
+}
+
+#contactForm ::-webkit-input-placeholder{
     color:    lightblue;
 }
 
-#contactForm textarea::-moz-placeholder{
+#contactForm::-moz-placeholder{
     color:    lightblue;
 }
 
-#contactForm textarea:-ms-input-placeholder{
+#contactForm:-ms-input-placeholder{
     color:    lightblue;
 }
 
