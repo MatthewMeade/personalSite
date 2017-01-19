@@ -47,8 +47,6 @@ function MessageSending(){
 }
 
 function SendMessage(){
-    MessageSending();
-
     var http = new XMLHttpRequest();
     var url = "https://formspree.io/contact@matthewmeade.me";
 
@@ -66,6 +64,7 @@ function SendMessage(){
         }
     };
 
+    MessageSending();
     http.send(params);
 
 }
