@@ -29,10 +29,10 @@
                     <span class="contactLabel">Phone:</span><a href="tel:709-694-0182" target="_blank">709-694-0182</a>
                 </div>
 
-                <form id="contactForm">
+                <form id="contactForm" method="POST" action="https://formspree.io/contact@matthewmeade.me" target="_blank">
                     <input type="email" name="email" id="email" placeholder="Your Email Address" required/>
-                    <textarea name="message" placeholder="Type message here..." required></textarea>
-                    <button type="button">Submit</button>
+                    <textarea name="message" id="messageBox" placeholder="Type message here..." required></textarea>
+                    <button type="submit" id="submitButton">Submit</button>
                 </form>
 
 
@@ -46,5 +46,6 @@
         </a>
 
     <script src="scripts/contactTab.js"></script>
+    <script src="scripts/contactForm.js"></script>
     </body>
 </html>
