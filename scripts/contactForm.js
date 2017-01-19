@@ -25,7 +25,7 @@ function MessageSent(){
         messageInput.className = "";
         emailInput.className = "";
 
-        submitButton.innerHTML = "Sending...";
+        submitButton.innerHTML = "Submit";
 
         messageInput.value = "";
         emailInput.value = "";
@@ -40,7 +40,7 @@ function MessageSending(){
     messageInput.className = "sending";
     emailInput.className = "sending";
 
-    submitButton.innerHTML = "Submit";
+    submitButton.innerHTML = "Sending...";
 
     messageInput.value = "Sending Message";
     emailInput.value = "Please Wait";
