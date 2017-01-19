@@ -53,7 +53,7 @@ function SendMessage(){
     var email = emailInput.value;
     var message = messageInput.value;
 
-    var params = "Email=" + email + "&Message=" + message;
+    var params = "email=" + email + "&Message=" + message;
     http.open("POST", url, true);
 
     http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
