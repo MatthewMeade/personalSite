@@ -50,7 +50,7 @@ function SendMessage(){
     MessageSending();
 
     var http = new XMLHttpRequest();
-    var url = "https://formspree.io/mafumeade@gmail.com";
+    var url = "https://formspree.io/contact@matthewmeade.me";
 
     var email = emailInput.value;
     var message = messageInput.value;
