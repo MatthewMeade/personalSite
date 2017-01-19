@@ -50,13 +50,11 @@ function SendMessage(){
     var http = new XMLHttpRequest();
     var url = "https://formspree.io/contact@matthewmeade.me";
 
-    var email = emailInput.value;
-    var message = messageInput.value;
+    var formData = new FormData(form);
 
-    var params = "_replyto=" + email + "&Message=" + message;
     http.open("POST", url, true);
 
-    http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    http.setRequestHeader('accept', 'application/json');
 
     http.onreadystatechange = function() {
         if(http.readyState == 4) {
@@ -65,6 +63,6 @@ function SendMessage(){
     };
 
     MessageSending();
-    http.send(params);
+    http.send(formData);
 
 }
