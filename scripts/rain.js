@@ -1,4 +1,4 @@
-var minBytes = 16;
+var minBytes = 4;
 var maxBytes = 16;
 var rate = 2;
 
