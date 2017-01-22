@@ -370,4 +370,60 @@ h1{
 }
 
 
+.rain{
+    position: absolute;
+    width: 250px;
+
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+
+    z-index: -2;
+}
+
+.rain.veryFar{
+    top: -50vh;
+    width: 90px;
+    transition: top 50s linear;
+
+    opacity: 0.1;
+    font-size: 100%;
+
+    filter: blur(2px);
+}
+
+.rain.far{
+    top: -65vh;
+    width: 150px;
+    transition: top 40s linear;
+
+    opacity: 0.2;
+    font-size: 150%;
+
+    filter: blur(2px);
+}
+
+.rain.mid{
+    top: -90vh;
+    transition: top 30s linear;
+
+    opacity: 0.3;
+    font-size: 200%;
+
+    filter: blur(1px);
+}
+
+.rain.near{
+    top: -110vh;
+    transition: top 20s linear;
+
+    opacity: 0.4;
+    font-size: 225%;
+
+    filter: blur(1px);
+}
+
+.rain.active{
+    top: 100vh;
+}
+
 
