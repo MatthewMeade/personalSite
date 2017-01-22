@@ -381,7 +381,7 @@ h1{
 }
 
 .rain.veryFar{
-    top: -50vh;
+    top: -60vh;
     width: 90px;
     transition: top 50s linear;
 
@@ -392,7 +392,7 @@ h1{
 }
 
 .rain.far{
-    top: -65vh;
+    top: -75vh;
     width: 150px;
     transition: top 40s linear;
 
@@ -403,7 +403,7 @@ h1{
 }
 
 .rain.mid{
-    top: -90vh;
+    top: -100vh;
     transition: top 30s linear;
 
     opacity: 0.3;
@@ -413,7 +413,7 @@ h1{
 }
 
 .rain.near{
-    top: -110vh;
+    top: -120vh;
     transition: top 20s linear;
 
     opacity: 0.4;
