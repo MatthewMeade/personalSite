@@ -1,0 +1,139 @@
+body{
+    overflow: auto;
+}
+
+h1{
+    font-size: 500%;
+    top: 0;
+    margin-top: 0;
+}
+
+@media (max-width: 800px) {
+    h1{
+        font-size: 400%;
+    }
+}
+
+#showcase{
+    width: 600px;
+}
+
+#showcase li{
+    margin-left: calc(33% - 153px)
+}
+
+.cornerDiv{
+    position: static;
+    margin: 0 75px;
+    transform: scale(1.1);
+}
+
+
+#resumeDiv{
+    clear: both;
+    float: left;
+}
+
+#resumeDiv img{
+    width: 101%;
+}
+
+#gitHubDiv{
+    float: right;
+    padding-bottom: 1px;
+}
+
+
+#resumeDiv:after{
+    content: "Resume";
+
+    border-left: 5px solid;
+
+    border-color:#1573D0;
+    color: #1573D0;
+
+    left: 130px;
+}
+
+#resumeDiv:before{
+    left: 88%;
+    border-left-width: 0;
+
+    border-color: transparent #1573D0;
+}
+
+#gitHubDiv:after{
+    content: "GitHub";
+
+    left: -175px;
+    border-right: 5px solid;
+
+    text-align: right;
+    border-color: #F54D27;
+    color: #F54D27;
+}
+
+#gitHubDiv:before{
+    left: -22%;
+    border-right-width: 0;
+
+    border-color: transparent #F54D27;
+}
+
+.cornerDiv:after{
+    width: 125px;
+    position: absolute;
+    top: 40px;
+
+    border-radius: 1px;
+    padding: 10px 5px;
+    font-size: 125%;
+
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+    font-variant: small-caps;
+}
+
+
+.cornerDiv:before{
+    content: "";
+    position: absolute;
+    top: 50px;
+    border: 10px solid;
+}
+
+
+@media (max-width: 775px) {
+    .cornerDiv:after{
+        top: 100%;
+        border: none !important;
+    }
+
+    #resumeDiv:after{
+        left: 0;
+    }
+
+    #gitHubDiv:after{
+        left: -15px;
+    }
+
+    .cornerDiv:before{
+        display: none;
+    }
+
+    #contactTab{
+        margin-top: 300px !important;
+    }
+}
+
+#contactTab{
+    position: static;
+
+    margin: 250px auto;
+
+    transform: translateX(1%);
+}
+
+.rain.near{
+    display: none;
+}

@@ -2,6 +2,8 @@ var minBytes = 4;
 var maxBytes = 16;
 var rate = 2;
 
+var container = document.getElementById("rainContainer");
+
 var distNames = ["near", "mid", "far", "veryFar"];
 
 var divs = [];
@@ -12,8 +14,8 @@ setInterval(CreateDiv, rate * 1000);
 
 function checkOffScreen() {
     for(var i = 0; i < divs.length; i++){
-        if(divs[i].offsetTop >= window.innerHeight){
-            document.body.removeChild(divs[i]);
+        if(divs[i].offsetTop >= window.outerHeight){
+            container.removeChild(divs[i]);
             divs.splice(i--, 1);
         }
     }
@@ -21,7 +23,7 @@ function checkOffScreen() {
 
 function CreateDiv(){
     var div = document.createElement("div");
-    document.body.appendChild(div);
+    container.appendChild(div);
 
     div.className = "rain " + distNames[Math.floor(Math.random() * distNames.length)];
 
