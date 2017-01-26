@@ -134,6 +134,10 @@ h1{
     transform: translateX(1%);
 }
 
+#contactBG{
+    display: none;
+}
+
 .rain.near{
     display: none;
 }
