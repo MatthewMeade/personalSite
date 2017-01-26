@@ -1,0 +1,88 @@
+h1{
+    font-size: 300%;
+}
+
+@media (max-width: 475px) {
+    h1{
+        font-size: 250%;
+    }
+}
+@media (max-width: 400px) {
+    h1{
+        font-size: 200%;
+    }
+}
+
+@media (max-width: 350px) {
+    h1{
+        font-size: 175%;
+    }
+}
+
+
+
+#showcase{
+    width: 100%;
+    height: auto;
+}
+
+#showcase li{
+    width: 250px;
+    margin: 10px auto;
+    float: none;
+}
+
+.cornerDiv{
+    display: block;
+    position: static;
+    float: none;
+    width: 100px;
+    height: 100px;
+
+    margin: 0;
+}
+
+#resumeDiv:after{
+    left: -15px;
+}
+
+#gitHubDiv:after{
+    left: -25px;
+}
+
+#resumeDiv{
+    margin-left: 25px;
+}
+
+#gitHubDiv{
+    margin-right: 25px;
+}
+
+
+#contactTab{
+    margin-top: 200px !important;
+}
+
+#contactContent{
+    width: 100vw;
+}
+
+#contactInfo{
+    font-size: 195%;
+}
+
+@media (max-width: 430px) {
+    #contactInfo{
+        font-size: 150%;
+    }
+}
+
+@media (max-width: 340px) {
+    #contactInfo{
+        font-size: 130%;
+    }
+}
+
+.rain{
+    display: none;
+}

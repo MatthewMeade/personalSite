@@ -10,12 +10,13 @@ h1{
 
 @media (max-width: 800px) {
     h1{
-        font-size: 400%;
+        font-size: 375%;
     }
 }
 
 #showcase{
     width: 600px;
+    height: 200px;
 }
 
 #showcase li{
@@ -121,23 +122,21 @@ h1{
         display: none;
     }
 
-    #contactTab{
-        margin-top: 300px !important;
-    }
 }
 
 #contactTab{
     position: static;
 
-    margin: 250px auto;
+    margin: 200px auto !important;
 
-    transform: translateX(1%);
+    transform: translateX(0);
 }
 
 #contactBG{
     display: none;
 }
 
-.rain.near{
+.rain.near, .rain.mid, .rain.veryFar{
     display: none;
 }
+

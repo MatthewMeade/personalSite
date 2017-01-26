@@ -14,7 +14,7 @@ setInterval(CreateDiv, rate * 1000);
 
 function checkOffScreen() {
     for(var i = 0; i < divs.length; i++){
-        if(divs[i].offsetTop >= window.outerHeight){
+        if(divs[i].offsetTop >= window.outerHeight || divs[i].style.display == "none"){
             container.removeChild(divs[i]);
             divs.splice(i--, 1);
         }
