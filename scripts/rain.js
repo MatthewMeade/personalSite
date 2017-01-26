@@ -1,6 +1,6 @@
 var minBytes = 4;
 var maxBytes = 16;
-var rate = 2;
+var rate = 7;
 
 var container = document.getElementById("rainContainer");
 
