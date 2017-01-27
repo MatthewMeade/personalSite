@@ -59,30 +59,30 @@ h1{
 }
 
 
-#contactTab{
-    margin-top: 200px !important;
-}
-
 #contactContent{
     width: 100vw;
 }
 
 #contactInfo{
-    font-size: 195%;
+    font-size: 200%;
 }
 
-@media (max-width: 430px) {
-    #contactInfo{
-        font-size: 150%;
-    }
-}
+/*@media (max-width: 430px) {*/
+    /*#contactInfo{*/
+        /*font-size: 150%;*/
+    /*}*/
+/*}*/
 
 @media (max-width: 340px) {
     #contactInfo{
-        font-size: 130%;
+        font-size: 175%;
     }
 }
 
 .rain{
+    display: none;
+}
+
+.contactLabel{
     display: none;
 }

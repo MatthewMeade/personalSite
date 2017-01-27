@@ -4,7 +4,6 @@ body{
 
 h1{
     font-size: 500%;
-    top: 0;
     margin-top: 0;
 }
 
@@ -127,14 +126,11 @@ h1{
 #contactTab{
     position: static;
 
-    margin: 200px auto !important;
+    margin: 200px auto;
 
     transform: translateX(0);
 }
 
-#contactBG{
-    display: none;
-}
 
 .rain.near, .rain.veryFar{
     display: none;
