@@ -1,5 +1,6 @@
 h1{
     font-size: 300%;
+    text-indent: .5em;
 }
 
 @media (max-width: 475px) {
@@ -19,11 +20,11 @@ h1{
     }
 }
 
-
-
 #showcase{
     width: 100%;
     height: auto;
+
+    margin-top: 200px;
 }
 
 #showcase li{
@@ -34,30 +35,31 @@ h1{
 
 .cornerDiv{
     display: block;
-    position: static;
+    position: absolute;
+    top: 70px;
     float: none;
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
 
     margin: 0;
 }
 
 #resumeDiv:after{
-    left: -15px;
+    left: -20px;
 }
 
 #gitHubDiv:after{
-    left: -25px;
+    left: -40px;
 }
 
 #resumeDiv{
-    margin-left: 25px;
+    margin-left: 15px;
 }
 
 #gitHubDiv{
-    margin-right: 25px;
+    margin-right: 15px;
+    padding: 0 2px 2px 0
 }
-
 
 #contactContent{
     width: 100vw;
@@ -66,12 +68,6 @@ h1{
 #contactInfo{
     font-size: 200%;
 }
-
-/*@media (max-width: 430px) {*/
-    /*#contactInfo{*/
-        /*font-size: 150%;*/
-    /*}*/
-/*}*/
 
 @media (max-width: 340px) {
     #contactInfo{
@@ -85,4 +81,8 @@ h1{
 
 .contactLabel{
     display: none;
+}
+
+#contactTab{
+    margin-top: 20px;
 }
