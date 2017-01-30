@@ -38,18 +38,18 @@ h1{
     position: absolute;
     top: 70px;
     float: none;
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
 
     margin: 0;
 }
 
 #resumeDiv:after{
-    left: -20px;
+    left: -10px;
 }
 
 #gitHubDiv:after{
-    left: -40px;
+    left: -30px;
 }
 
 #resumeDiv{
