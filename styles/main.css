@@ -69,6 +69,7 @@ h1{
     transition: bottom .3s;
 
     z-index: 100;
+    cursor: pointer;
 }
 
 #contactTab:before, #contactTab:after{
